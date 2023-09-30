@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./rpc.css">
+    <title>Responsive Blog Website</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Adventure</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+        <img src="menu.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Beauty of the Nature</h2>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h1>
+            <a href="#" class="ctn">Explore more</a>
+        </div>
+    </header>
+    <section class="events">
+        <div class="title">
+            <h1>Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="mtrek.jpg" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Trekking to Everest Base Camp is not going to be a walk in the park, but it's not a technical climb and if you're fit enough, mentally and physically, you're more than likely to be up to the challenge. This is a hard and tough trek at altitude and over at least 10 days.</p>
+                <a href="#" class="ctn">Leran more</a>
+            </div>
+            <div class="col">
+                <img src="workh.jpg" alt="">
+                <h4>Walking Holidays</h4>
+                <p>A working holiday is a cultural exchange concept which allows you to work abroad on a special, government-issued 'working holiday visa'.</p>
+                <a href="#" class="ctn">Leran more</a>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <P>Nature has many Beauty forms to explore</P>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <section class="tour">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Tours and Destinations</h1>
+                <div class="line"></div>
+                <p>You can explore it all with India tours to this marvellous destination.Tourism offers great opportunities for emerging economies and developing countries. It creates jobs, strengthens the local economy, contributes to local infrastructure development and can help to conserve the natural environment and cultural assets and traditions, and to reduce poverty and inequality.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="ig1.jpg" alt="">
+                    <img src="ig2.jpg" alt="">
+                    <img src="ig3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>license number 123@3456</p>
+        <p>copyright issue</p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks= document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',() =>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

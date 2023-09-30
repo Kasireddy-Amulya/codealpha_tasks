@@ -1,0 +1,16 @@
+//SELECTOR
+let color1 = document.querySelector(".color1");
+let color2 = document.querySelector(".color2");
+let css = document.querySelector("h3");
+let body = document.getElementById("gradient")
+//FUNCTION
+function gradientChang(){
+    body.style.background = "linear-gradient(to right ,"+
+    color1.value + "," + color2.value + ")";
+
+    css.textContent = body.style.background + ";" ;
+}
+
+//ADD EVENT LISTENER
+color1.addEventListener("input", gradientChang);
+color2.addEventListener("input", gradientChang);
